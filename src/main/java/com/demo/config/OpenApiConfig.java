@@ -17,7 +17,7 @@ public class OpenApiConfig {
 				.components(new Components().addSecuritySchemes("bearer-token",
 						new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")
 								.name("Authorization")))
-				.info(new Info().title("Employee CRUD OP")
+				.info(new Info().title("Employee CRUD OPERATION")
 						.description("@author:github/akshu-dh ").version("1.0.0"))
 				.addSecurityItem(new SecurityRequirement().addList("bearer-token"));
 	}
